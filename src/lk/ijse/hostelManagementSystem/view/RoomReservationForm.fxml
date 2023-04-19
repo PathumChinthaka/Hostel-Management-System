@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #D4F6CC;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostelManagementSystem.controller.ManageReservationForm">
+   <children>
+      <ImageView fitHeight="73.0" fitWidth="73.0" layoutX="6.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/reservation.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="85.0" layoutY="76.0" prefHeight="4.0" prefWidth="900.0" style="-fx-background-color: #D8D8D8;" />
+      <Text layoutX="88.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Room Reservation">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="35.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="58.0" fitWidth="66.0" layoutX="919.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/Arrow.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="915.0" layoutY="12.0" prefHeight="58.0" prefWidth="66.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#btnDashboard" opacity="0.0" prefHeight="58.0" prefWidth="66.0" text="Button" />
+         </children>
+      </Pane>
+      <TextField fx:id="txtReservationId" layoutX="31.0" layoutY="192.0" promptText="Reservation ID" />
+      <TextField fx:id="txtStudentId" layoutX="254.0" layoutY="192.0" promptText="Student ID" />
+      <TableView fx:id="tblRoomReservation" layoutX="32.0" layoutY="280.0" onMouseClicked="#museClickedEvent" prefHeight="306.0" prefWidth="938.0">
+        <columns>
+          <TableColumn fx:id="culmReservationId" prefWidth="151.0" text="Reservation ID" />
+            <TableColumn fx:id="culmDate" prefWidth="132.0" text="Date" />
+            <TableColumn fx:id="culmStudentId" prefWidth="187.0" text="Student ID" />
+            <TableColumn fx:id="culmRoomTypeId" prefWidth="199.0" text="Room Type ID" />
+            <TableColumn fx:id="culmStatus" prefWidth="140.0" text="Status" />
+            <TableColumn fx:id="culmRoomId" prefWidth="130.0" text="Room ID" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="31.0" layoutY="106.0" onAction="#btnAddRoomData" prefHeight="35.0" prefWidth="109.0" style="-fx-background-color: #3CCF4E;" text="Add Reservation" />
+      <JFXButton layoutX="376.0" layoutY="106.0" onAction="#btnUpdateRoomData" prefHeight="35.0" prefWidth="124.0" style="-fx-background-color: #F9D923;" text="Update Reservation" />
+      <JFXButton layoutX="802.0" layoutY="106.0" onAction="#btnDeleteRoomData" prefHeight="35.0" prefWidth="117.0" style="-fx-background-color: #E64848;" text="Delete Reservation" />
+      <TextField fx:id="txtSearchReser" layoutX="778.0" layoutY="238.0" promptText="Search Reservation" />
+      <Label fx:id="lblId" layoutX="567.0" layoutY="115.0" prefHeight="17.0" prefWidth="73.0" />
+      <TextField fx:id="txtRoomtypeId" layoutX="474.0" layoutY="192.0" promptText="Roomtype ID" />
+      <Text layoutX="34.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservation ID" />
+      <Text layoutX="254.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID" />
+      <Text layoutX="476.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Type ID" />
+      <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="934.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/search.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="929.0" layoutY="232.0" prefHeight="35.0" prefWidth="39.0">
+         <children>
+            <JFXButton layoutY="-1.0" onAction="#btnSearchReser" opacity="0.0" prefHeight="35.0" prefWidth="39.0" />
+         </children>
+      </Pane>
+      <TextField fx:id="txtStatus" layoutX="690.0" layoutY="190.0" promptText="Status" />
+      <Text layoutX="692.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" />
+      <Label fx:id="lblDate" layoutX="650.0" layoutY="32.0" prefHeight="25.0" prefWidth="117.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

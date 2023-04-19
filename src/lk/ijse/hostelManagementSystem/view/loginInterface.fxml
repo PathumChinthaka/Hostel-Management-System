@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #B0DAFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostelManagementSystem.controller.LoginInterface">
+   <children>
+      <ImageView fitHeight="535.0" fitWidth="563.0" layoutX="451.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/picture.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecf2ff" height="361.0" layoutX="58.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" width="383.0" />
+      <Label layoutX="156.0" layoutY="148.0" prefHeight="64.0" prefWidth="186.0" text="LOG IN" textFill="#2c3333">
+         <font>
+            <Font name="Corbel" size="58.0" />
+         </font>
+      </Label>
+      <Text fontSmoothingType="LCD" layoutX="144.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserName">
+         <font>
+            <Font name="Dubai Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtUserName" layoutX="144.0" layoutY="275.0" prefHeight="25.0" prefWidth="210.0" promptText="Enter UserName" />
+      <Text fontSmoothingType="LCD" layoutX="146.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="Dubai Bold" size="12.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="txtPassword" layoutX="144.0" layoutY="342.0" prefHeight="25.0" prefWidth="210.0" promptText="Enter Password" />
+      <Text layoutX="848.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@Allrights Reserved 2023">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="35.0" fitWidth="49.0" layoutX="6.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/hostel.png" />
+         </image></ImageView>
+      <Button layoutX="172.0" layoutY="402.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="35.0" prefWidth="155.0" text="Log in">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text fill="#3c4048" layoutX="46.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hostel D24">
+         <font>
+            <Font name="Webdings" size="26.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblTime" layoutX="14.0" layoutY="537.0" prefHeight="25.0" prefWidth="94.0" text="Tel :0385682551">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lblDate" layoutX="677.0" layoutY="3.0" prefHeight="35.0" prefWidth="322.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime1" layoutX="14.0" layoutY="510.0" prefHeight="25.0" prefWidth="210.0" text="No :183 , Senanayake Road,Colombo">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lblTime2" layoutX="14.0" layoutY="561.0" prefHeight="25.0" prefWidth="179.0" text="E-mail :HostelD24@gmail.com">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="102.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/usernam.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="362.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/-eye.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="355.0" layoutY="337.0" prefHeight="35.0" prefWidth="49.0">
+         <children>
+            <JFXButton layoutX="-1.0" onAction="#btnShowpassword" opacity="0.0" prefHeight="35.0" prefWidth="52.0" text="Button" />
+         </children>
+      </Pane>
+      <Label fx:id="lblpassword" layoutX="307.0" layoutY="493.0" prefHeight="17.0" prefWidth="133.0" />
+   </children>
+</AnchorPane>

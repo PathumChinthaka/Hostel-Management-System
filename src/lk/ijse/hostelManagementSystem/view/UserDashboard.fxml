@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostelManagementSystem.controller.UserDashboard">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="172.0" style="-fx-background-color: #BACDDB;" styleClass="#BACDDB">
+         <children>
+            <JFXButton layoutX="17.0" layoutY="273.0" onAction="#btnManageReservation" prefHeight="35.0" prefWidth="137.0" style="-fx-background-color: #C04A82;" text="Reservations">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Ellipse fill="#f9fbfc" layoutX="86.0" layoutY="49.0" radiusX="37.0" radiusY="35.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="58.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/online.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="72.0" layoutY="91.0" text="Online" />
+            <JFXButton layoutX="17.0" layoutY="213.0" onAction="#btnManageStudent" prefHeight="35.0" prefWidth="137.0" style="-fx-background-color: #E7AB9A;" text="Manage Students">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="17.0" layoutY="152.0" onAction="#btnManageRooms" prefHeight="35.0" prefWidth="137.0" style="-fx-background-color: #408E91;" text="Manage Rooms">
+               <effect>
+                  <SepiaTone />
+               </effect>
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="59.0" fitWidth="58.0" layoutX="55.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/mngeuser.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="641.0" layoutY="270.0" prefHeight="124.0" prefWidth="305.0" style="-fx-background-color: #59C1BD;">
+               <effect>
+                  <DropShadow height="32.72" radius="15.86" width="32.72">
+                     <color>
+                        <Color red="0.6039215922355652" green="0.5647059082984924" blue="0.5647059082984924" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Pane>
+            <Pane layoutX="47.0" layoutY="14.0" prefHeight="70.0" prefWidth="80.0">
+               <effect>
+                  <DropShadow height="32.72" radius="15.86" width="32.72">
+                     <color>
+                        <Color red="0.6039215922355652" green="0.5647059082984924" blue="0.5647059082984924" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <JFXButton minHeight="70.0" minWidth="80.0" onAction="#btnUserManage" opacity="0.0" />
+               </children>
+            </Pane>
+         </children></Pane>
+      <Pane layoutX="229.0" layoutY="87.0" prefHeight="124.0" prefWidth="305.0" style="-fx-background-color: #8BBCCC;">
+         <children>
+            <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+         </children>
+         <effect>
+            <DropShadow height="32.72" radius="15.86" width="32.72">
+               <color>
+                  <Color red="0.6039215922355652" green="0.5647059082984924" blue="0.5647059082984924" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <Pane layoutX="631.0" layoutY="87.0" prefHeight="124.0" prefWidth="305.0" style="-fx-background-color: #5DA7DB;">
+         <effect>
+            <DropShadow height="32.72" radius="15.86" width="32.72">
+               <color>
+                  <Color red="0.6039215922355652" green="0.5647059082984924" blue="0.5647059082984924" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <Pane layoutX="229.0" layoutY="260.0" prefHeight="124.0" prefWidth="305.0" style="-fx-background-color: #7286D3;">
+         <effect>
+            <DropShadow height="32.72" radius="15.86" width="32.72">
+               <color>
+                  <Color red="0.6039215922355652" green="0.5647059082984924" blue="0.5647059082984924" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
